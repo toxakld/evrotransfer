@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="img.css">
+    <link rel="stylesheet" href="output.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+<!-- <script>
+    /** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    screens: {
+      'xs': {'max': '319px'},
+      'sm': {'max': '320px'},
+      'md': '768px',
+      'lg': '1200px',
+      
+    }
+  }
+}
+</script> -->
+<body>
+    <header class="deep-blue flex items-center justify-between  lg:grid lg:grid-cols-10 lg:h-20 lg:items-center lg:gap-3 lg:justify-center lg:relative md:justify-center md:items-center ">
+        <div class="logo  lg:col-start-2 justify-center items-center"><img src="/img/logo.png" alt="" class="h-10 w-20"></div>
+        <a href="#" class="main hidden md:flex justify-center items-center text-center text-sm px-2 text-col hover:text-gray-800">ГЛАВНАЯ</a>
+        <a href="#" class="about hidden md:flex justify-center items-center text-center text-sm px-2 relative group text-col hover:text-gray-800">О ПРОДУКТЕ</a>
+        <div class="dropdown hidden md:block relative group">
+            <a href="#" class="advantages flex justify-center items-center text-center text-sm px-2 text-col hover:text-gray-800">ПРЕИМУЩЕСТВА</a>
+            <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg py-1 deep-blue ring-1 ring-black ring-opacity-5 transition ease-out duration-100 transform opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 z-50">
+                <a href="" class="block px-4 py-2 text-sm text-col-l hover:bg-gray-100">ОПЫТНЫЕ ВОДИТЕЛИ</a>
+                <a href="" class="block px-4 py-2 text-sm text-col-l hover:bg-gray-100">БОЛЬШОЙ АВТОПАРК</a>
+                <a href="" class="block px-4 py-2 text-sm text-col-l hover:bg-gray-100">КРУГЛОСУТОЧНЫЙ СЕРВИС</a>
+                <a href="" class="block px-4 py-2 text-sm text-col-l hover:bg-gray-100">ЛУЧШИЕ ЦЕНЫ</a>
+            </div>
+        </div>
+        
+        <a href="#" class="review hidden md:flex justify-center items-center text-center text-sm px-2 text-col hover:text-gray-800">ОТЗЫВЫ</a>
+        <a href="#" class="feedback hidden md:flex justify-center items-center text-center text-sm px-2 text-col hover:text-gray-800">ОБРАТНАЯ СВЯЗЬ</a>
+        <div class="phonenumber hidden md:flex justify-center items-center text-center text-sm px-2 text-col hover:text-gray-800">+7999-999-99-99</div>
+        <button class="mobile-menu-button md:hidden" id="mobile-menu-button">
+            <img src="/img/menu.png" alt="Menu">
+        </button>
+        <div class="menu-backdrop hidden fixed inset-0 bg-black bg-opacity-50 z-10" id="menu-backdrop">
+
+            <div class="mobile-menu hidden fixed top-0 right-0 max-w-xs w-40 bg-white shadow-md z-20 transform translate-x-full 
+            transition-transform duration-300" id="mobile-menu">
+                   
+                <a href="#" class="block py-2 px-4 text-sm text-col-l hover:bg-sky-950 hover:text-white">Главная</a>
+                <a href="#" class="block py-2 px-4 text-sm text-col-l hover:bg-sky-950 hover:text-white">О продукте</a>
+                <a href="#" class="block py-2 px-4 text-sm text-col-l hover:bg-sky-950 hover:text-white">Преимущества</a>
+                <a href="#" class="block py-2 px-4 text-sm text-col-l hover:bg-sky-950 hover:text-white">Отзывы</a>
+                <a href="#" class="block py-2 px-4 text-sm text-col-l hover:bg-sky-950 hover:text-white">Обратная связь</a>
+            </div>
+        </div>
+        
+        
+
+        <div class="profile hidden  h-8 w-8 md:flex justify-center items-center"><img src="/img/profile.png" alt="" class=""></div>
+    </header>
+    
+    
+
+    
+
+
+
+    <div class="h-screen bg-no-repeat bg-cover flex flex-col items-center justify-between  md:grid md:grid-cols-10 md:grid-rows-4" 
+    style="background-image: url(/img/background/warsaw.jpg);">
+    
+    <div class="offer w-full px-4 md:px-0 md:row-start-2 md:col-start-2 md:col-end-6">
+        <div class="main font-extrabold text-2xl pt-5 md:text-3xl text-col text-center md:text-left"><p>ТРАНСФЕР В ЛЮБУЮ ТОЧКУ ЕВРОПЫ</p></div>
+        <div class="second font-medium text-col-l mt-10 text-center md:text-left">Компания Evrotransfer осуществляет поездки во всех<br>
+                            направлениях европы и Росии уже более 10-ти лет! <br>
+                            Организация трансфера в аэропорты всех стран европы</div>
+    </div>
+    
+    <div class="button w-full px-4 md:px-0 md:row-start-3 md:col-start-2 md:col-end-6 flex justify-center md:justify-start items-center">
+        <button type="button" class="text-gray-900 bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 
+        hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 
+        font-extrabold rounded-lg text-2xl px-5 py-2.5 text-center me-2 mb-2 h-20 md:h-24"><p class="text-col">ЗАКАЗАТЬ ПОЕЗДКУ</p></button>
+    </div>
+    
+    <div class="timer w-full px-4 md:px-0 md:row-start-3 md:col-start-7 md:col-end-10 flex justify-center md:justify-start items-center">
+        <div class="text-4xl font-bold text-col">
+            <span id="days"></span>д : <span id="hours"></span>ч : <span id="minutes"></span>м : <span id="seconds"></span>с
+        </div>
+    </div>
+    
+    <div class="arrow h-8 w-8  px-4 md:px-0 md:col-start-6  md:row-start-4 flex justify-center items-end">
+        <button onclick="scrollToBottom()" class=" text-black"><img src="/img/down-arrow.png" alt=""></button>
+    </div>
+    
+    </div>
+    
+<div class="adv bgcol pb-10">
+    <div class="offer font-bold w-screen flex justify-center items-center h-20 ">
+        <h3 class="text-2xl text-col">НАШИ ПРЕИМУЩЕСТВА</h3>
+    </div>
+<div class="advantages grid grid-cols-1 grid-rows-4 lg:grid lg:grid-cols-10 lg:grid-rows-1 lg:gap-5 bgcol  p-4 lg:justify-center md:grid-cols-10 md:grid-rows-2 md:gap-5">
+
+    <div class="group  lg:col-start-2 lg:col-end-4 drivers lg:relative flex flex-col items-center md:col-start-2 md:col-end-6 " data-group="drivers">
+        <div class="text-l font-bold">ОПЫТНЫЕ ВОДИТЕЛИ</div>
+        <img src="/img/drivers/driver1.jpg" alt="Driver" class="image transition-transform duration-300 ease-in-out transform 
+        group-hover:scale-105 cursor-pointer w-full lg:w-60 sm:w-4/5 h-auto" style="height: 250px; ">
+        <img src="/img/drivers/driver2.jpg" alt="Driver" class="image hidden">
+        <img src="/img/drivers/driver3.jpg" alt="Driver" class="image hidden">
+    </div>
+    <div class="group lg:col-start-4 lg:col-end-6 autopark lg:relative flex flex-col items-center md:col-start-6 md:col-end-10 " data-group="autopark">
+        <div class="text-l font-bold">БОЛЬШОЙ АВТОПАРК</div>
+        <img src="/img/auto/Mercedes V-Class-2.webp" alt="Autopark" class="image transition-transform duration-300 ease-in-out transform 
+        group-hover:scale-105 cursor-pointer w-full lg:w-60 sm:w-4/5 h-auto" style="height: 250px;">
+        <img src="/img/auto/w212.webp" alt="Autopark" class="image hidden">
+        <img src="/img/auto/passatI.jpg" alt="Autopark" class="image hidden">
+    </div>
+    <div class="group lg:col-start-6 lg:col-end-8 lg:row-start-1 fullday lg:relative flex flex-col items-center md:col-start-2 md:col-end-6 md:row-start-2" data-group="fullday">
+        <div class="text-l font-bold">КРУГЛОСУТОЧНЫЙ СЕРВИС</div>
+        <img src="/img/24h/day.jpg" alt="24h Service" class="image transition-transform duration-300 ease-in-out transform 
+        group-hover:scale-105 cursor-pointer w-full lg:w-60 sm:w-4/5 h-auto" style="height: 250px;">
+        <img src="/img/24h/night.jpg" alt="24h Service" class="image hidden">
+        <img src="/img/24h/xmas.jpg" alt="24h Service" class="image hidden">
+    </div>
+    <div class="group lg:col-start-8 lg:col-end-10 lg:row-start-1 price lg:relative flex flex-col items-center md:col-start-6 md:col-end-10 md:row-start-2" data-group="price">
+        <div class="text-l font-bold">ЛУЧШИЕ ЦЕНЫ</div>
+        <img src="/img/price/bils.jpg" alt="Pricing" class="image transition-transform duration-300 ease-in-out transform 
+        group-hover:scale-105 cursor-pointer w-full lg:w-60 sm:w-4/5 h-auto" style="height: 250px;">
+        <img src="/img/price/nfc.png" alt="Pricing" class="image hidden">
+        <img src="/img/price/sale.png" alt="Pricing" class="image hidden">
+    </div>
+</div>
+
+<!-- Modal для полноэкранного просмотра -->
+<div id="modal" class="bgcol fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center p-4 z-50">
+    <div class="bg-white p-2 rounded flex flex-col items-center shadow-lg">
+        <span id="close" class="self-end cursor-pointer text-2xl font-bold text-black p-2 m-2">&times;</span>
+        <img id="modal-image" src="" alt="Gallery image" style="max-width: 1024px; max-height: 450px;" class="max-w-full">
+        <div class="flex justify-center gap-4 mt-4">
+            <button id="prev" class="p-2 bg-blue-500 text-white font-bold rounded">Предыдущая</button>
+            <button id="next" class="p-2 bg-blue-500 text-white font-bold rounded">Следующая</button>
+        </div>
+    </div>
+</div>
+<div class="button  w-full px-4 md:px-0 md:row-start-4 md:col-start-2 md:col-end-6 flex justify-center  items-center">
+    <button type="button" onclick="scrollToBottom()" class="text-gray-900 bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 
+    hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 
+    font-extrabold rounded-lg text-2xl px-5 py-2.5 text-center me-2 mb-2 h-20 md:h-24"><p class="text-col">ЗАКАЗАТЬ ПОЕЗДКУ</p></button>
+</div>
+</div>
+<!-- ДОБАВИТЬ РАСЦЕНКИ НА ЧАСТЫЕ НАПРАВЛЕНИ -->
+<div class="routes">
+    
+</div>
+
+
+<div id="reviews" class="reviews-cards grid grid-cols-1 gap-4 mb-4 bgcol ">
+<div class="flex justify-center">
+    <h3 class="text-col text-2xl font-bold mb-4  ">ОТЗЫВЫ</h3>
+</div>
+    <div id="reviews-container" class="reviews-cards grid grid-cols-1 md:grid-cols-3 gap-4 mb-4 mx-auto px-4 md:px-10 w-full">
+
+    </div>
+    <div class="flex space-x-4 mt-5 justify-center">
+        <button id="prev" class="text-gray-900 bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 
+        hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 
+         rounded-lg  px-5 py-2.5 text-center me-2 mb-2" onclick="prevReviews()">Предыдущий отзыв</button>
+        <button id="next" class="text-gray-900 bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 
+        hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 
+         rounded-lg  px-5 py-2.5 text-center me-2 mb-2" onclick="nextReviews()">Следующий отзыв</button>
+    </div>
+</div>
+
+<div class="backform flex justify-center">
+    <div class="form-txt">
+            <h2 class="mb-4 text-col text-2xl font-bold ">ОФОРМИТЬ ПОЕЗДКУ</h2>
+        </div>
+    </div>
+    <div id="message" class="hidden fixed top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 bg-green-300 p-5 rounded-md shadow-lg opacity-50" 
+    >Заявка успешно отправлена!</div>
+    <form id="feedback-form" action="submit_feedback.php" method="post" onsubmit="sendFeedback(event)" class="px-2 py-2 lg:grid lg:grid-rows-5 
+    lg:grid-cols-6 md:grid md:grid-rows-5 md:grid-cols-6 pb-10">
+    <div class="lg:col-start-2 md:col-start-2">
+        <label for="name" class="block mb-2 text-sm text-col-l font-medium">ФИО</label>
+        <input type="text" id="name" placeholder="Иванов Иван Иванович" class="shadow-sm bg-gray-50 border border-gray-300 text-col-l text-sm 
+        rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
+    </div>
+    <div class="lg:col-start-4 md:col-start-4">
+        <label for="from" class="block mb-2 text-sm text-col-l font-medium">Место встречи</label>
+        <input type="text" id="from" placeholder="Город, аэропорт" class="shadow-sm bg-gray-50 border border-gray-300 text-col-l text-sm 
+        rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
+    </div>
+    <div class="lg:col-start-2 lg:row-start-2 md:col-start-2 md:row-start-2">
+        <label for="email" class="block mb-2 text-sm text-col-l font-medium">Ваша почта</label>
+        <input type="email" id="email" placeholder="ivanov@mail.ru" class="shadow-sm bg-gray-50 border border-gray-300 text-col-l text-sm 
+        rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
+    </div>
+    <div class="lg:col-start-4 lg:row-start-2 md:col-start-4 md:row-start-2">
+        <label for="to" class="block mb-2 text-sm text-col-l font-medium">Место прибытия</label>
+        <input type="text" id="to" placeholder="Город, аэропорт" class="shadow-sm bg-gray-50 border border-gray-300 text-col-l text-sm 
+        rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
+    </div>
+    <div class="lg:col-start-2 lg:row-start-3 md:col-start-2 md:row-start-3">
+        <label for="passengers" class="block mb-2 text-sm text-col-l font-medium">Количество пассажиров</label>
+        <input type="text" id="passengers" placeholder="Количество пассажиров" class="shadow-sm bg-gray-50 border border-gray-300 
+        text-col-l text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
+    </div>
+    <div class="lg:col-start-2 lg:col-span-2 lg:row-start-4  lg:row-end-6 md:row-end-5 md:col-start-2 md:col-span-2 md:row-start-4">
+        <label for="text-a" class="block mb-2 text-sm text-col-l font-medium">Пожелания в поездке</label>
+        <input type="message" rows="6" id="text-a" placeholder="Желаемый автомобили, количество багажа, наличие животных..." class="shadow-sm 
+        bg-gray-50 border border-gray-300 text-col-l text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-5">
+    </div>
+    <button type="submit" class="lg:row-start-4 lg:col-start-4 md:row-start-4 md:col-start-4 md:col-span-2 text-gray-900 bg-gradient-to-r 
+    from-blue-600 via-blue-700 to-blue-800 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 
+    dark:focus:ring-blue-800 font-bold rounded-lg text-xl px-5 py-2.5 text-center me-2 mb-2 h-full disabled:opacity-50 mt-5 lg:ml-5">Отправить</button>
+</form>
+    
+    
+
+<div class="footer deep-blue grid grid-cols-10 h-20 items-center gap-3 justify-center relative">
+    <div class="ph hidden md:block col-start-2"><p>+79999999999</p></div>
+    <div class="mail col-start-3 col-span-2"><p>evrotransfer@gmail.com</p></div>
+    <div class="adr hidden md:block col-start-5"><p>г.Калининград ул.Брамса 9</p></div>
+    <div class="cc hidden md:block col-start-6 col-span-2"><a href="https://www.flaticon.com/free-icons/cc" title="cc icons">Все права на данный сайт принадлежат Evrotransfer</a></div>
+    <div class="tg h-8 w-8 col-start-8"><img src="/img/socials/telegram.png" alt=""  ></div>
+    <div class="vk  h-8 w-8 col-start-9"><img src="/img/socials/vk.png" alt=""></div>
+    <div class="scroll-to-top col-start-10 cursor-pointer" onclick="scrollToTop()">
+        <img src="/img/up-arrow.png" alt="Вверх" class="h-8 w-8">
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+<!-- npm i -D prettier-plugin-tailwindcss -->

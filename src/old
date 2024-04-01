@@ -1,0 +1,44 @@
+все наброски и варианты кода которые не вошли в итоговую работу входят сюда
+    
+    
+    <div id="authModal" class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full">
+        <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
+            <div class="mt-3 text-center">
+                <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100">
+                    <span class="close text-gray-900 cursor-pointer">&times;</span>
+                </div>
+                <h3 class="text-lg leading-6 font-medium text-gray-900">Авторизация/Регистрация</h3>
+                <form id="authForm" class="mt-2">
+                    <input type="text" id="username" placeholder="Username" class="mt-2 p-3 w-full border rounded-md" required>
+                    <input type="password" id="password" placeholder="Password" class="mt-2 p-3 w-full border rounded-md" required>
+                    <div class="items-center px-4 py-3">
+                        <button id="loginBtn" class="px-4 py-2 bg-blue-500 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300">
+                            Login
+                        </button>
+                        <button id="registerBtn" class="mt-3 px-4 py-2 bg-gray-500 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-300">
+                            Register
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    //модальное окно авторизации 
+
+document.querySelector(".profile").addEventListener("click", function() {
+  document.getElementById("authModal").classList.remove("hidden");
+});
+
+document.querySelector(".close").addEventListener("click", function() {
+  document.getElementById("authModal").classList.add("hidden");
+});
+
+window.addEventListener("click", function(event) {
+  let modal = document.getElementById("authModal");
+  if (event.target == modal) {
+    modal.classList.add("hidden");
+  }
+});

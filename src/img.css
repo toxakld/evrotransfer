@@ -1,0 +1,18 @@
+/* .logo{ */
+    /* background-image: url(/img/logo.png); */
+    /* height: 50px;
+    width: 100px;
+    z-index: 999; */
+/* } */
+.deep-blue {
+    background-color: #003366;
+  }
+  .text-col-l {
+    color: #000f20;
+  }
+  .text-col {
+    color: #000710;
+  }
+.bgcol{
+    background-color: #C0C0C0;
+}
