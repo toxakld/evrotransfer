@@ -42,3 +42,30 @@ window.addEventListener("click", function(event) {
     modal.classList.add("hidden");
   }
 });
+
+
+
+<span id="ticket-name" class="absolute font-bold text-3xl " style="top: 31.5%; left: 16%;"> </span>
+<span id="ticket-email" class="absolute font-bold text-3xl" style="top: 39.8%; left: 26%;"> </span>
+<span id="ticket-from" class="absolute font-bold text-3xl" style="top: 48%; left: 31.5%;"> </span>
+<span id="ticket-to" class="absolute font-bold text-3xl" style="top: 56.3%; left: 34.5%;"> </span>
+<span id="ticket-passengers" class="absolute font-bold text-3xl" style="top: 64.5%; left: 47.3%;"> </span>
+
+
+
+
+function updateTicketPosition() {
+    const imageWidth = 952; 
+    const imageHeight = 790; 
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
+    const imageAspectRatio = imageWidth / imageHeight;
+    const screenAspectRatio = screenWidth / screenHeight;
+    let scaleFactor = 1;
+
+    
+    if (imageAspectRatio > screenAspectRatio) {
+        scaleFactor = screenHeight / imageHeight;
+    } else {
+        scaleFactor = screenWidth / imageWidth;
+    }

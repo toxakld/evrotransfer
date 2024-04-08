@@ -11,8 +11,109 @@
     color: #000f20;
   }
   .text-col {
-    color: #000710;
+    color: #b6b6b6;
   }
 .bgcol{
-    background-color: #C0C0C0;
+    background-color: #1c2235;
 }
+.text-reviews{
+  color: #d6d6d6;
+}
+
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25%);
+  }
+}
+
+.bounce {
+  animation: bounce 1s infinite;
+}
+
+
+
+/* анимация отзыва */
+
+.review-card {
+  transition: opacity 0.5s ease-in-out;
+}
+/* .ticket {
+  min-width: 600px; 
+  background-size: contain;
+  min-height: 790px;
+}
+
+ @media (max-width: 1200px) {
+  #ticket-name {
+      top: calc(31.5% / 1900 * 1200); 
+      left: calc(16% / 1900 * 1200);
+  }
+  #ticket-email {
+      top: calc(39.8% / 1900 * 1200);
+      left: calc(26% / 1900 * 1200);
+  }
+  #ticket-from {
+      top: calc(48% / 1900 * 1200);
+      left: calc(31.5% / 1900 * 1200);
+  }
+  #ticket-to {
+      top: calc(56.3% / 1900 * 1200);
+      left: calc(34.5% / 1900 * 1200);
+  }
+  #ticket-passengers {
+      top: calc(64.5% / 1900 * 1200);
+      left: calc(47.3% / 1900 * 1200);
+  }
+ 
+}  */
+
+
+/* .ticket {
+  width: 900px; 
+  height: 300px;
+} */
+
+
+@keyframes neon-move {
+  0%, 100% {
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 15px #2188ff,
+      0 0 20px #2188ff,
+      0 0 25px #2188ff,
+      0 0 30px #2188ff,
+      0 0 35px #2188ff;
+  }
+  50% {
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #2188ff,
+      0 0 15px #2188ff,
+      0 0 20px #2188ff,
+      0 0 25px #2188ff,
+      0 0 30px #fff,
+      0 0 35px #fff;
+  }
+}
+
+.neon-effect {
+  color: #161a5a;
+  animation: neon-move 2s infinite alternate;
+}
+
+
+/* стили выпадающего меню */
+.dropdown-menu > div {
+  transition: opacity 0.8s ease, transform 0.5s ease;
+}
+
+.group:hover .dropdown-menu > div {
+  opacity: 1;
+  transform: translateY(0);
+}
+
